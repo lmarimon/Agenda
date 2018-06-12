@@ -1,9 +1,6 @@
 <?php
   require_once(__DIR__ . "/../app/controller/Controller.class.php");
-  // login externo
-  //include_once("login.php");
-  
-  //if (isset($_SESSION['id'])) {
+
     // enrutamiento
     $map = array(
       'inicio' => array('controller' =>'Controller', 'action' =>'main'),
@@ -56,5 +53,4 @@
       header('Status: 404 Not Found');
       echo '<html><body><h1>Error 404: El controlador <i>'.$controlador['controller'].'->'.$controlador['action'].'</i> no existe</h1></body></html>';
     }
-  //}
 ?>
