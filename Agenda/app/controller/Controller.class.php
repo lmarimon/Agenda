@@ -8,7 +8,7 @@
     function __construct(){
         $this->contactDAO = new ContactDAO();
         $ini = parse_ini_file(__DIR__ . "/../url_config.ini");
-        self::$base_url = $ini['base_url'] . "Agenda/web/";
+        self::$base_url = $ini['base_url'] . "web/";
     }
     // Función principal, muestra la fecha y un msg por pantalla
     public function main($msg = ""){
